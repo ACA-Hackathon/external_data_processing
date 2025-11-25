@@ -16,6 +16,6 @@ Every year, they publish the SAA (Statistique Agricole Annuelle), a report on ag
 ## Outputs
 Using the make commands, this project enables the generation of the following files:
 
-- ```agreste.parquet```
+- ```agreste_2010_2024_{*}.parquet```
 
 As a backup, these files are saved [here](link_to_hf_repository).

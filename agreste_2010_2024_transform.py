@@ -27,4 +27,4 @@ if __name__ == "__main__":
                                          i=schemas[correspondances[onglet]]["i"],
                                          j=schemas[correspondances[onglet]]["j"],
                                          sep=schemas[correspondances[onglet]]["sep"])
-        pandas_df_to_parquet(tables[onglet], f"data/agreste_2010_2024{onglet}.parquet")
+        pandas_df_to_parquet(tables[onglet], f"data/agreste_2010_2024_{onglet}.parquet")
