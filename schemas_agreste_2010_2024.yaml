@@ -1,0 +1,110 @@
+agreste_correspondance:
+  COP: crop_1
+  FOU: crop_1
+  IND: crop_1
+  PDT: crop_1
+  LEG: crop_1
+  FRT: crop_1
+  FLR: fleurs
+  VIG: vignes
+  VIN: vin
+  TER: sau
+  EFA: animaux
+  PRA: animaux_finis
+  LAI: lait
+
+# COP, FOU, IND, PDT, LEG, FRT
+crop_1:
+  stubnames:
+    - SURF
+    - REND
+    - PROD
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# FLR
+fleurs:
+  stubnames: SURF
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# VIG
+vignes:
+  stubnames:
+    - SURF_TOT
+    - SURF_PROD
+    - REND
+    - PROD
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# VIN
+vin:
+  stubnames:
+    - SURF
+    - REND
+    - PROD_TT
+    - PROD_ROUGE
+    - PROD_BLANC
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# TER(SAU) -> Surface Agricole Utilisée
+sau:
+  stubnames: SURF
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# EFA
+animaux:
+  stubnames: EFF
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# PRA
+animaux_finis:
+  stubnames:
+    - NBTETE
+    - POIDS_MOY
+    - PROD
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
+# LAI
+lait:
+  stubnames: LAIT
+  i:
+    - LIB_REG2
+    - LIB_DEP
+    - LIB_SAA
+  j: ANNEE
+  sep: "_"
+
