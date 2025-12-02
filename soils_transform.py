@@ -38,7 +38,7 @@ if __name__ == "__main__":
     STU_SMU_PATH = "src/soils/stuorg.csv"
     STU_INFO_PATH  = "src/soils/stu.csv"
 
-    bdgsf = soils = gpd.read_file(SOIL_DB_PATH)
+    bdgsf = gpd.read_file(SOIL_DB_PATH)
     grid = np.load(GRID_PATH)
     stu_smu = pd.read_csv(STU_SMU_PATH, sep=";")
     stu_info = pd.read_csv(STU_INFO_PATH, sep=";")
