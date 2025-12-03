@@ -4,3 +4,5 @@ src/
 data/
 # drafts/ directory
 drafts/
+# temporary/ files
+tmp/

@@ -4,7 +4,7 @@ import pyarrow.parquet as pq
 import os
 import yaml
 
-def pandas_df_to_parquet(df: pd.DataFrame, path: str) -> None:
+def pandas_df_to_parquet(df, path) -> None:
     df.to_parquet(path, index=True)
 
 if __name__ == "__main__":
